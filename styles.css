@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items:center;
+    background-color: #176B87;
+    font-size: 25px;
+    position: fixed;
+    width: 100%;
+}
+
+nav a .nav-home{
+    flex: 1;
+}
+
+nav a .nav-signup{
+    flex: 1;
+}
+nav ul {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    list-style: none;
+}
+nav ul li {
+    margin: 5px;
+}
+nav ul li :hover {
+    background-color:white;
+    color:#176B87;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+nav a:hover {
+    background-color: white;
+    color: #176B87;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+    padding-top: 40px;
+}
+
+@media (max-width:768px) {
+    nav {
+        font-size:medium;
+    }
+    main h1 {
+        font-size:4em;
+    }
+}
+@media (max-width:576px) {
+    .container {
+        display: inline-block;
+        cursor: pointer;
+      }
+      
+      .bar1, .bar2, .bar3 {
+        width: 45px;
+        height: 7px;
+        background-color:#176B87;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      
+      /* Rotate first bar */
+      .change .bar1 {
+        transform: translate(0, 11px) rotate(-60deg);
+      }
+      
+      /* Fade out the second bar */
+      .change .bar2 {opacity: 0;}
+      
+      /* Rotate last bar */
+      .change .bar3 {
+        transform: translate(0, -11px) rotate(55deg);
+      }
+    nav {
+        display: none;
+    }
+    
+    h1 {
+        display: none;
+    }
+    main h1 {
+        font-size:3em;
+    }
+
+    .sidebar-compressed  {
+        display: flex;
+        flex-direction: column;
+        background-color: #176B87;
+        align-items: center;
+        list-style: none;  
+        width: 100%;
+        text-align: center;
+        min-height: 100vh; 
+    }
+    
+    
+    .sidebar-compressed li:hover {
+        background-color: white;
+        color: #176B87;
+    }
+    .sidebar-compressed a {
+        height: 20%;
+        text-decoration: none;
+        color:white;
+        font-size: xx-large;
+        flex: 1;
+        width: 100%;
+    }
+    .sidebar-compressed a:hover {
+        cursor: pointer;
+        background-color: white;
+        color: #176B87;
+    }
+}
+
+
